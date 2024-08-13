@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+
+</head>
+<body >
+
+    <div class="container">
+        <div class="box">
+            <h1 class="head">BMI CALCULATOR</h1>
+        <div class="content">
+
+        <div class="input">
+            
+          <label for="height">Age</label>
+          <input type="text" class="text-input" id="age" autocomplete="off" required/>
+        </div>
+
+        <div class="gender">
+            <label class="container">
+                <input type="radio" id="male" name="gender"><p class="text">Male</p>
+                
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">
+            <input type="radio" id="female" name="gender">
+            <p class="text">Female</p>
+            <span class="checkmark"></span>
+        </label>
+
+         </div>
+
+<div class="containerHW">
+         <div class="inputH">
+            <label for="height">Height(cm)</label>
+            <input type="number" id="height" requird>
+        </div>
+
+            <div class="inputW">
+                <label for="height">Weight(kg)</label>
+                <input type="number" id="weight" requird>
+
+               
+            </div>
+         </div>
+
+         <button class="calculate" onclick="button()" id="submit">Calculate BMI</button>
+
+         <div class="result">
+           <p>Your BMI is</p>
+           <div id="result">00.00</div>
+           <p class="comment"></p>
+
+         </div>
+          </div>
+          
+        </div>
+    </div>
+        
+        </body>
+        <script src="./script.js"></script>
+        </html>
